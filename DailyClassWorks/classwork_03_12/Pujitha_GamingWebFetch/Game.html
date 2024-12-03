@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Dashboard</title>
+  <link rel="stylesheet" href="Game.css">
+</head>
+<body>
+  <header>
+    <h1>Gaming Dashboard</h1>
+    <div class="controls">
+      <input type="text" id="search-bar" placeholder="Search by title or category...">
+      <button id="search-btn">Search</button>
+      <button id="reset-btn">Reset</button>
+    </div>
+  </header>
+  <main>
+    <section id="game-grid"></section>
+    <div class="summary">
+      <h3 id="total-games">Total Games: 0</h3>
+    </div>
+  </main>
+
+  <!-- Modal for game details -->
+  <div id="modal" class="hidden">
+    <div class="modal-content">
+      <span id="close-modal">&times;</span>
+      <h2 id="modal-title"></h2>
+      <img id="modal-image" src="" alt="Game Image">
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <!-- Wishlist Section -->
+  <div id="wishlist-container" class="wishlist">
+    <h2>Your Wishlist</h2>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="Game.js"></script>
+</body>
+</html>

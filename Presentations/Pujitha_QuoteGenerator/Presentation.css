@@ -1,0 +1,119 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Container styling */
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+  margin: auto;
+  flex: 1;
+}
+
+/* Dropdown styling */
+.genre-dropdown {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.genre-dropdown:hover {
+  border-color: #0056b3;
+}
+
+/* Button styling */
+.btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Quote card styling */
+.quote-card {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.quote-card:hover {
+  border-color: #007bff;
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+}
+
+.quote-card:before {
+  content: "📑";
+  font-size: 20px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+/* Quote text */
+#quote-text {
+  font-style: italic;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+#quote-author {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Footer styling */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #f8f8f8;
+  color: #555;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+  width: 100%;
+  position: relative;
+}
+
+.footer .social-link {
+  color: #007bff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer .social-link:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  margin: 5px 0;
+}

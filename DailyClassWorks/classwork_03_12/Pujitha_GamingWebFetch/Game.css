@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+  }
+  
+  header {
+    background: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .controls {
+    margin: 1em 0;
+    text-align: center;
+  }
+  
+  .controls input {
+    padding: 0.5em;
+    width: 250px;
+    margin-right: 1em;
+  }
+  
+  .controls button {
+    padding: 0.5em 1em;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .controls button:hover {
+    background: #0056b3;
+  }
+  
+  #game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+    padding: 1em;
+  }
+  
+  .card {
+    position: relative;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    overflow: hidden;
+    padding: 1em;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-height: 200px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-content {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .wishlist-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .wishlist-btn:hover {
+    background: #218838;
+  }
+  
+  .wishlist {
+    padding: 1em;
+    border-top: 2px solid #ccc;
+    background-color: #fff;
+    margin-top: 2em;
+  }
+  
+  #modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  

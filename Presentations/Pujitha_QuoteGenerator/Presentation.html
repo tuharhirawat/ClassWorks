@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote Generator</title>
+  <link rel="stylesheet" href="Presentation.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Quote Generator</h1>
+    <h3>"Fuel Your Mind with Words That Inspire"</h3>
+
+    <label for="genre-select">Choose a Genre:</label>
+    <select id="genre-select" class="genre-dropdown">
+      <option value="inspirational">Inspirational</option>
+      <option value="life">Life</option>
+      <option value="wisdom">Wisdom</option>
+      <option value="love">Love</option>
+      <option value="humor">Humor</option>
+    </select>
+
+    <button id="get-quote" class="btn">Get Quote</button>
+
+    <div class="quote-card">
+      <p id="quote-text">Your quote will appear here!</p>
+      <p id="quote-author"></p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2024 Quote Generator. All rights reserved.</p>
+    <p>Follow us on: 
+      <a href="#" class="social-link">Legbook</a> | 
+      <a href="#" class="social-link">Pistagram</a> | 
+      <a href="#" class="social-link">Qwitter</a>
+    </p>
+    <p>Powered by Creativity and Code.</p>
+  </footer>
+
+  <script src="Presentation.js"></script>
+</body>
+</html>
