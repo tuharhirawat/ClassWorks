@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Household Chores Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Household Chores Assignment</h1>
+        <form id="choresForm">
+        <div id="taskContainer">
+            <div class="task">
+                <input type="text"  id="task" placeholder="name the task" class="chore-input" name="chore[]" >
+                <input type="text" id="AssignedTo" placeholder="Assigned to" class="member-input" name="member[]" >
+                <button type="button" class="addTaskBtn">Add Task</button>
+                <button type="button" class="remove-btn" onclick="removeTask(this)">Remove</button>
+            </div>
+        </div>
+        </form>
+        <div id="output"></div>
+    </div>
+        <script src="script.js"></script>
+</body>
+</html>
+
+        
+    

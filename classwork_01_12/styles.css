@@ -1,0 +1,54 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(231, 231, 12);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    max-height: 250px;
+    margin: 150px 0px;
+    padding: 20px;
+    background: lightseagreen;
+    border-radius: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+.addTaskBtn {
+    background-color: green;
+    color: white;
+}
+
+.addTaskBtn:hover {
+    background-color: darkgreen; 
+    transform: scale(1.05); 
+}
+
+.addTaskBtn:active {
+    background-color: limegreen;
+    transform: scale(0.95); 
+}
+
+.remove-btn {
+    color: white;
+    background-color: darkred;
+}
+
+.remove-btn:hover {
+    background-color: red; 
+    transform: scale(1.05); 
+}
+
+.remove-btn:active {
+    background-color: crimson; 
+    transform: scale(0.95); 
+}
