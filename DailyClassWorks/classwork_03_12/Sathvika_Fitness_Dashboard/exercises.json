@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "title": "Push-Up",
+      "category": "Strength",
+      "description": "A basic upper body exercise that targets the chest, shoulders, and triceps.",
+      "image": "https://th.bing.com/th/id/OIP.SglZbUTvRRvXqd11JiD3zgHaHa?w=173&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"
+    },
+    {
+      "id": 2,
+      "title": "Squat",
+      "category": "Strength",
+      "description": "A lower body exercise that targets the quads, hamstrings, and glutes.",
+      "image": "http://ts2.mm.bing.net/th?id=OIP.bO-IhqcmemFIJ_-OgrXjhQHaGm&pid=15.1"
+    },
+    {
+      "id": 3,
+      "title": "Running",
+      "category": "Cardio",
+      "description": "A cardio exercise that helps with endurance and cardiovascular health.",
+      "image": "https://th.bing.com/th/id/OIP.Ntta06TSt1Pr-NAXNP8fOwHaEK?w=284&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"
+    },
+    {
+      "id": 4,
+      "title": "Jumping Jacks",
+      "category": "Cardio",
+      "description": "A full-body cardio workout that engages the arms, legs, and core.",
+      "image": "https://th.bing.com/th/id/OIP.IVdqgOXl7cVCeQOkCARmBwAAAA?w=223&h=176&c=7&r=0&o=5&dpr=1.4&pid=1.7"
+    }
+  ]
+  
