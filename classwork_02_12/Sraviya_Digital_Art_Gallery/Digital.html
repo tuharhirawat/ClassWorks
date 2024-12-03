@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Art Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Digital Art Gallery</h1>
+        <input type="text" id="searchInput" placeholder="Search artworks..." />
+        <select id="artistFilter" aria-label="Filter by Artist">
+            <option value="">Filter by Artist</option>
+        </select>
+    </header>
+
+    <div id="artworks-container" class="artworks-container"></div>
+
+    <div id="loadingSpinner" class="spinner">Loading...</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
