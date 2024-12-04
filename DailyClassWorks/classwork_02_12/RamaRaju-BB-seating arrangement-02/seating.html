@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seating Arrangement Form</title>
+    <link rel="stylesheet" href="seating.css">
+</head>
+<body>
+    <div class="container"> 
+        <h1>Seating Arrangement Form</h1>
+        <img src="https://wallpaperaccess.com/full/200687.jpg" width=600px height=300px>
+        <form id="seatingForm" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="studentId">Student ID:</label>
+                <input type="text" id="studentId" name="studentId" placeholder="242177" required>
+            </div>
+            <div class="form-group">
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" name="studentName" placeholder="Alex John" required>
+            </div>
+            <div class="form-group">
+                <label for="class">Class:</label>
+                <input type="text" id="class" name="class" placeholder="eg:10th" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="xyz@gmail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="seatNo">Seat No:</label>
+                <input type="number" id="seatNo" name="seatNo" placeholder="enter seat no" required min="1">
+            </div>
+            <div class="form-group">
+                <label for="school">College/School:</label>
+                <input type="text" id="school" name="school" placeholder="enter school/college name"  required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        
+        <div id="message" style="color: red;"></div>
+        <div id="result" style="color: green;"></div>
+        <h2>Submitted Data:</h2>
+        <ul id="submittedData"></ul>
+    </div>
+    <script src="seating.js"></script>
+</body>
+</html>

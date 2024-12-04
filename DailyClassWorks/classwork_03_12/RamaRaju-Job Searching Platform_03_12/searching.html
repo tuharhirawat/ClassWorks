@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Search Platform</title>
+  <link rel="stylesheet" href="searching.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Searching Hub</h1>
+    <h6>The best job searching platform</h6>
+  </header>
+  <main>
+    <section class="filters">
+      <input type="text" id="roleInput" placeholder="Enter Job Title or Role">
+      <input type="text" id="locationInput" placeholder="Enter Location">
+      <select id="categoryFilter">
+        <option value="">All Categories</option>
+        <option value="Full-Time">Full-Time</option>
+        <option value="Part-Time">Part-Time</option>
+        <option value="Seasonal">Seasonal</option>
+        <option value="Stipend">Stipend</option>
+      </select>
+      <button id="searchBtn">Search</button>
+      <button id="resetBtn">Reset</button>
+    </section>
+    <section class="summary">
+      <p>Total Jobs: <span id="totalJobs">0</span></p>
+    </section>
+    <section id="jobGrid" class="grid">
+      <!-- Job cards will be dynamically inserted here -->
+    </section>
+  </main>
+  <script src="searching.js"></script>
+</body>
+</html>
