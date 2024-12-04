@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Parent-Teacher Meeting Scheduler</h1>
+      <div class="form-container">
+        <h2>Book a Slot</h2>
+        <form>
+          <label>Parent Name:</label>
+          <input type="text" />
+          <label>Select Slot:</label>
+          <select>
+            <option value="" disabled>Choose a slot</option>
+            <option value="1">9:00 AM</option>
+            <option value="2">10:00 AM</option>
+          </select>
+          <button type="submit">Book Slot</button>
+        </form>
+      </div>
+      <div class="slot-list">
+        <h2>Available Slots</h2>
+        <ul>
+          <li class="slot available">9:00 AM - Available</li>
+          <li class="slot booked">10:00 AM - Booked</li>
+        </ul>
+      </div>
+    </div>
+    
+  </body>
+</html>
