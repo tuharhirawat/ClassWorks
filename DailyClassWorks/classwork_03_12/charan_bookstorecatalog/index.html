@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookstore Catalog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="filters">
+    <label for="categoryFilter">Category:</label>
+    <select id="categoryFilter">
+      <option value="fiction">Fiction</option>
+      <option value="nonfiction">Non-Fiction</option>
+      <option value="science">Science</option>
+      <option value="history">History</option>
+    </select>
+  </div>
+
+  <div id="bookCatalog" class="book-catalog">
+  
+  </div>
+
+
+  <div id="bookModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2 id="bookTitle"></h2>
+      <p id="bookDescription"></p>
+      <p id="bookAuthor"></p>
+      <p id="bookPublisher"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
