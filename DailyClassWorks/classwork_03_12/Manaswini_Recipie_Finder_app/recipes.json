@@ -1,0 +1,83 @@
+{
+    "recipes": [
+      {
+        "id": "1",
+        "title": "Vegetarian Lasagna",
+        "category": "Vegetarian",
+        "ingredients": [
+          "Lasagna noodles",
+          "Ricotta cheese",
+          "Spinach",
+          "Mozzarella cheese",
+          "Parmesan cheese",
+          "Tomato sauce"
+        ],
+        "instructions": "Preheat the oven to 350°F. Cook the lasagna noodles according to package instructions. Layer the noodles with ricotta cheese, spinach, mozzarella, and tomato sauce. Bake for 40 minutes.",
+        "image": "https://example.com/images/vegetarian_lasagna.jpg"
+      },
+      {
+        "id": "2",
+        "title": "Chicken Curry",
+        "category": "Non-Vegetarian",
+        "ingredients": [
+          "Chicken thighs",
+          "Onion",
+          "Garlic",
+          "Curry powder",
+          "Coconut milk",
+          "Tomatoes"
+        ],
+        "instructions": "Heat oil in a large pan and cook onions and garlic until soft. Add chicken and cook until browned. Stir in curry powder, coconut milk, and tomatoes. Simmer for 30 minutes.",
+        "image": "https://example.com/images/chicken_curry.jpg"
+      },
+      {
+        "id": "3",
+        "title": "Chocolate Cake",
+        "category": "Dessert",
+        "ingredients": [
+          "Flour",
+          "Cocoa powder",
+          "Sugar",
+          "Baking powder",
+          "Eggs",
+          "Butter",
+          "Milk"
+        ],
+        "instructions": "Preheat the oven to 350°F. Mix all ingredients in a bowl and pour into a greased cake tin. Bake for 30 minutes.",
+        "image": "https://example.com/images/chocolate_cake.jpg"
+      },
+      {
+        "id": "4",
+        "title": "Vegan Tacos",
+        "category": "Vegan",
+        "ingredients": [
+          "Taco shells",
+          "Lettuce",
+          "Tomatoes",
+          "Vegan cheese",
+          "Black beans",
+          "Corn"
+        ],
+        "instructions": "Fill taco shells with black beans, corn, lettuce, tomatoes, and vegan cheese. Serve with a side of salsa.",
+        "image": "https://example.com/images/vegan_tacos.jpg"
+      },
+      {
+        "id": "5",
+        "title": "Chicken-Biryani",
+        "category": "Biryani",
+        "ingredients": [
+          "Taco shells",
+          "Lettuce",
+          "Tomatoes",
+          "Vegan cheese",
+          "Black beans",
+          "Corn"
+        ],
+        "instructions": "Fill taco shells with black beans, corn, lettuce, tomatoes, and vegan cheese. Serve with a side of salsa.",
+        "image": "https://images.unsplash.com/photo-1504674900247-fd2c6e5d3e23"
+      }
+      
+      
+    ]
+  }
+  
