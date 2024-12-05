@@ -4,19 +4,19 @@ import ProfileForm from "./ProfileForm";
 import ListCard from "./ListCard";
 
 function Profile({ setProfiles }) {
-  const [profiles, setProfilesLocal] = useState([]); // Manage local profiles state
+  const [profiles, setProfilesLocal] = useState([]); 
 
   const deleteProfile = (id) => {
     const updatedProfiles = profiles.filter((profile) => profile.id !== id);
     setProfilesLocal(updatedProfiles);
-    setProfiles(updatedProfiles); // Pass updated profiles to the parent component (SearchBar)
+    setProfiles(updatedProfiles); 
   };
 
   const addProfile = (profile) => {
     const updatedProfile = { ...profile, id: generateID() };
     const newProfiles = [...profiles, updatedProfile];
     setProfilesLocal(newProfiles);
-    setProfiles(newProfiles); // Pass updated profiles to the parent component (SearchBar)
+    setProfiles(newProfiles); 
   };
 
   return (

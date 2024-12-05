@@ -16,7 +16,7 @@ function ProfileForm({ addProfile }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    addProfile(formData); // Add profile via callback
+    addProfile(formData); 
   };
 
   return (

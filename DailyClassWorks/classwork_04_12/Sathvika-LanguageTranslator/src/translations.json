@@ -1,0 +1,20 @@
+{
+  "hello": {
+    "es": "Hola",
+    "fr": "Bonjour",
+    "de": "Hallo",
+    "it": "Ciao",
+    "pt": "Olá",
+    "ru": "Привет",
+    "ar": "مرحباً"
+  },
+  "goodbye": {
+    "es": "Adiós",
+    "fr": "Au revoir",
+    "de": "Auf Wiedersehen",
+    "it": "Addio",
+    "pt": "Adeus",
+    "ru": "До свидания",
+    "ar": "وداعا"
+  }
+}
