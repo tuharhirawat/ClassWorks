@@ -1,0 +1,360 @@
+ <!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contest Entry</title>
+    Link to external CSS file -->
+    <!-- <link rel="stylesheet" href="validation.css" />
+  </head>
+  <body>
+    <header>Contest Entry Form</header>
+    <main>
+      <section id="contest-entries">
+        <div class="entry">
+          <form class="entry-form" onsubmit="validateEntry(event, this)">
+            <div class="input">
+              <label for="Username">UserName:</label>
+              <input type="text" name="UserName" class="name"/>
+            </div>
+
+            <div class="input">
+              <label for="email">Email: </label>
+              <input type="email" name="email" class="email" />
+            </div>
+
+            <div class="input">
+              <label for="age">Age: </label>
+              <input type="number" name="age" class="age" />
+            </div>
+
+            <div class="input">
+              <label for="Address">Address:</label>
+              <input type="text" name="Address" class="address"/>
+            </div>
+
+            <div id="btn">
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <button id="add-entry">Add New Entry</button>
+      <div id="submitted-details"></div> <!-- Placeholder for displaying submitted details -->
+    <!-- </main>
+
+    <footer>Footer</footer>
+
+    <script>
+      function validateEntry(event, form) {
+        event.preventDefault(); // Prevent form submission until validation is done
+
+        const name = form.querySelector(".name");
+        const email = form.querySelector(".email");
+        const age = form.querySelector(".age");
+        const address = form.querySelector(".address");
+
+        let errorMessages = [];
+
+        // Remove previous error messages if any
+        const existingErrors = form.querySelectorAll(".error-message");
+        existingErrors.forEach(error => error.remove());
+
+        // Validation for name
+        if (name.value.trim() === "" || !isNaN(name.value)) {
+          errorMessages.push("Name is required and should not be a number.");
+          const error = document.createElement("span");
+          error.className = "error-message";
+          error.style.color = "red";
+          error.textContent = "Name is required and should not be a number.";
+          name.after(error);
+        }
+
+        // Validation for email
+        if (email.value.trim() === "" || !validateEmail(email.value)) {
+          errorMessages.push("Valid email is required.");
+          const error = document.createElement("span");
+          error.className = "error-message";
+          error.style.color = "red";
+          error.textContent = "Valid email is required.";
+          email.after(error);
+        }
+
+        // Validation for age
+        if (age.value.trim() === "" || isNaN(age.value) || age.value <= 0) {
+          errorMessages.push("Valid age is required.");
+          const error = document.createElement("span");
+          error.className = "error-message";
+          error.style.color = "red";
+          error.textContent = "Valid age is required.";
+          age.after(error);
+        }
+
+        // Validation for address
+        if (address.value.trim() === "") {
+          errorMessages.push("Address is required.");
+          const error = document.createElement("span");
+          error.className = "error-message";
+          error.style.color = "red";
+          error.textContent = "Address is required.";
+          address.after(error);
+        }
+
+        // If there are any errors, prevent form submission and display them
+        if (errorMessages.length > 0) {
+          return;
+        }
+
+        // Display the entered details after successful validation
+        const submittedDetails = document.getElementById("submitted-details");
+        const details = `
+          <h3>Submitted Details:</h3>
+          <p><strong>UserName:</strong> ${name.value}</p>
+          <p><strong>Email:</strong> ${email.value}</p>
+          <p><strong>Age:</strong> ${age.value}</p>
+          <p><strong>Address:</strong> ${address.value}</p>
+        `;
+        submittedDetails.innerHTML = details;
+
+        // Hide the form after submission (optional)
+        form.style.display = "none";
+
+        // Optionally, reset the form after submission (or you could leave the form as is)
+        form.reset();
+      }
+
+      // Email validation function
+      function validateEmail(email) {
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+      }
+
+      // Add new entry form functionality
+      document.getElementById("add-entry").addEventListener("click", () => {
+        const section = document.getElementById("contest-entries");
+        const newEntry = document.createElement("div");
+        newEntry.className = "entry";
+        newEntry.innerHTML = `
+          <form class="entry-form" onsubmit="validateEntry(event, this)">
+            <div class="input">
+              <label for="Username">UserName:</label>
+              <input type="text" name="UserName" class="name"/>
+            </div>
+
+            <div class="input">
+              <label for="email">Email: </label>
+              <input type="email" name="email" class="email"/>
+            </div>
+
+            <div class="input">
+              <label for="age">Age: </label>
+              <input type="number" name="age" class="age"/>
+            </div>
+
+            <div class="input">
+              <label for="Address">Address:</label>
+              <input type="text" name="Address" class="address"/>
+            </div>
+
+            <div id="btn">
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </div>
+          </form>
+        `;
+        section.appendChild(newEntry);
+      });
+    </script>
+  </body>
+</html>  -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contest Entry</title>
+    <link rel="stylesheet" href="validation.css" />
+  </head>
+  <body>
+    <header>Contest Entry Form</header>
+    <main>
+      <section id="contest-entries">
+        <div class="entry">
+          <form class="entry-form" onsubmit="validateEntry(event, this)">
+            <div class="input">
+              <label for="Username">UserName:</label>
+              <input type="text" name="UserName" class="name" />
+            </div>
+
+            <div class="input">
+              <label for="email">Email: </label>
+              <input type="email" name="email" class="email" />
+            </div>
+
+            <div class="input">
+              <label for="age">Age: </label>
+              <input type="number" name="age" class="age" />
+            </div>
+
+            <div class="input">
+              <label for="Address">Address:</label>
+              <input type="text" name="Address" class="address" />
+            </div>
+
+            <div id="btn">
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <button id="add-entry">Add New Entry</button>
+      <div id="submitted-details"></div> <!-- Placeholder for displaying submitted details -->
+    </main>
+
+    <!-- <footer>Footer</footer>
+
+    <section class="section-1">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </section> -->
+
+    <!-- <nav>
+      <ul>
+        <li><a href="#image">Home</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </nav> -->
+
+    <script>
+      function validateEntry(event, form) {
+        event.preventDefault(); // Prevent form submission until validation is done
+
+        const name = form.querySelector(".name");
+        const email = form.querySelector(".email");
+        const age = form.querySelector(".age");
+        const address = form.querySelector(".address");
+
+        let errorMessages = [];
+
+        // Remove previous error messages if any
+        const existingErrors = form.querySelectorAll(".error-message");
+        existingErrors.forEach(error => error.remove());
+
+        // Validation for name
+        if (name.value.trim() === "" || !isNaN(name.value)) {
+          errorMessages.push("Name is required and should not be a number.");
+          const error = document.createElement("span");
+          error.className = "error-message";
+          error.style.color = "red";
+          error.textContent = "Name is required and should not be a number.";
+          name.after(error);
+        }
+
+        // Validation for email
+        if (email.value.trim() === "" || !validateEmail(email.value)) {
+          errorMessages.push("Valid email is required.");
+          const error = document.createElement("span");
+          error.className = "error-message";
+          error.style.color = "red";
+          error.textContent = "Valid email is required.";
+          email.after(error);
+        }
+
+        // Validation for age
+        if (age.value.trim() === "" || isNaN(age.value) || age.value <= 0) {
+          errorMessages.push("Valid age is required.");
+          const error = document.createElement("span");
+          error.className = "error-message";
+          error.style.color = "red";
+          error.textContent = "Valid age is required.";
+          age.after(error);
+        }
+
+        // Validation for address
+        if (address.value.trim() === "") {
+          errorMessages.push("Address is required.");
+          const error = document.createElement("span");
+          error.className = "error-message";
+          error.style.color = "red";
+          error.textContent = "Address is required.";
+          address.after(error);
+        }
+
+        // If there are any errors, prevent form submission and display them
+        if (errorMessages.length > 0) {
+          return;
+        }
+
+        // Display the entered details after successful validation
+        const submittedDetails = document.getElementById("submitted-details");
+        const details = `
+          <h3>Submitted Details:</h3>
+          <p><strong>UserName:</strong> ${name.value}</p>
+          <p><strong>Email:</strong> ${email.value}</p>
+          <p><strong>Age:</strong> ${age.value}</p>
+          <p><strong>Address:</strong> ${address.value}</p>
+        `;
+        submittedDetails.innerHTML = details;
+
+        // Hide the form after submission (optional)
+        form.style.display = "none";
+
+        // Optionally, reset the form after submission (or you could leave the form as is)
+        form.reset();
+      }
+
+      // Email validation function
+      function validateEmail(email) {
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+      }
+
+      // Add new entry form functionality
+      document.getElementById("add-entry").addEventListener("click", () => {
+        const section = document.getElementById("contest-entries");
+        const newEntry = document.createElement("div");
+        newEntry.className = "entry";
+        newEntry.innerHTML = `
+          <form class="entry-form" onsubmit="validateEntry(event, this)">
+            <div class="input">
+              <label for="Username">UserName:</label>
+              <input type="text" name="UserName" class="name" />
+            </div>
+
+            <div class="input">
+              <label for="email">Email: </label>
+              <input type="email" name="email" class="email" />
+            </div>
+
+            <div class="input">
+              <label for="age">Age: </label>
+              <input type="number" name="age" class="age" />
+            </div>
+
+            <div class="input">
+              <label for="Address">Address:</label>
+              <input type="text" name="Address" class="address" />
+            </div>
+
+            <div id="btn">
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </div>
+          </form>
+        `;
+        section.appendChild(newEntry);
+      });
+    </script>
+  </body>
+</html>
+
