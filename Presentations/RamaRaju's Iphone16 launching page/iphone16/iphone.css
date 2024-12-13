@@ -1,0 +1,113 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+video{
+    width: 100%;
+    height: 125%;
+    z-index: 0;
+    position: absolute;
+    bottom: -100px;
+}
+.con{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    z-index: 2;
+}
+#i16{
+    width: 300px;
+    /* mix-blend-mode: color-burn; */
+    height: 300px;
+    border-radius: 2%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transform: translate(0px);
+    overflow: hidden;
+    color: rgb(168, 226, 246);
+    position: absolute;
+    left: 8%;
+    z-index: 2;
+}
+#i16pro{
+    width: 300px;
+    height: 300px;
+    border-radius: 2%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* margin-left: 200px; */
+    transform: translate(0px);
+    overflow: hidden;
+    color: rgb(168, 226, 246);
+    position: absolute;
+    left: 70%;
+    z-index: 2;
+}
+#base{
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    left: -30px;
+    transform: translateX(-200px);
+    transform: translateY(-300.2px);
+    transition: all 2s;
+}
+#pro{
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    left: -30px;
+    transform: translateX(-200px);
+    transform: translateY(-300.2px);
+    transition: all 2s;
+}
+#i16:hover #base{
+    transform: translateX(0px);
+    transform: translateY(50px);
+}
+#i16pro:hover #pro{
+    transform: translate(0px);
+    transform: translateY(50px);
+}
+button{
+    position: absolute;
+    left: 15%;
+    bottom: 3%;
+    width: 70%;
+    height: 10%;
+    border-radius: 25px;
+    background-color: skyblue;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    cursor: pointer;
+}
+#mh{
+    text-align: center;
+}
+#md{
+    text-align: left;
+}
+span{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+p{
+    padding-top: 13px;
+    padding-left: 15px;
+    font-size: larger;
+    font-weight: lighter;
+}
+h2{
+    text-align: center;
+    margin-top: 10px;
+}
+h1,p,h2{
+    text-shadow: 2px 2px 2px black;
+}          
