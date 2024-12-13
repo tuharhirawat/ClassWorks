@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "brand": "Maruti Suzuki",
+      "model": "Swift",
+      "price": 600000,
+      "year": 2023,
+      "image": "download.jpg"
+    },
+    {
+      "id": 2,
+      "brand": "Hyundai",
+      "model": "i20",
+      "price": 800000,
+      "year": 2023,
+      "image": "https://example.com/i20.jpg"
+    },
+    {
+      "id": 3,
+      "brand": "Tata",
+      "model": "Nexon",
+      "price": 1200000,
+      "year": 2023,
+      "image": "https://example.com/nexon.jpg"
+    },
+    {
+      "id": 4,
+      "brand": "Mahindra",
+      "model": "XUV300",
+      "price": 1100000,
+      "year": 2023,
+      "image": "https://example.com/xuv300.jpg"
+    },
+    {
+      "id": 5,
+      "brand": "Kia",
+      "model": "Seltos",
+      "price": 1500000,
+      "year": 2023,
+      "image": "https://example.com/seltos.jpg"
+    }
+  ]
+  

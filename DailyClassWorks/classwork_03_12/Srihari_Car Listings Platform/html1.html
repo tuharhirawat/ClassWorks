@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Listings</title>
+  <link rel="stylesheet" href="css1.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Car Listings Platform</h1>
+    <div class="filters">
+      <select id="brand-filter">
+        <option value="all">All Brands</option>
+      </select>
+      <input type="number" id="min-price" placeholder="Min Price">
+      <input type="number" id="max-price" placeholder="Max Price">
+      <button id="filter-btn">Filter</button>
+    </div>
+    <div id="car-listings" class="car-listings">
+    </div>
+  </div>
+  <script src="js1.js"></script>
+</body>
+</html>
