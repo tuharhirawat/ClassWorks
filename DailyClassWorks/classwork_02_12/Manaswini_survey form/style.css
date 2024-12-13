@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .question-container {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .options-section {
+    margin-left: 20px;
+  }
+  
+  .option-input {
+    margin-bottom: 10px;
+  }
+  
+  .option-text {
+    margin-left: 10px;
+    padding: 5px;
+  }
+  
+  .btn {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .add-btn {
+    background-color: green;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: red;
+    color: white;
+    margin-top: 5px;
+  }
+  
