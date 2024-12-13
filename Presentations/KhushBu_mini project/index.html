@@ -1,0 +1,55 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <h1>E-Shop</h1>
+        </div>
+        <nav class="navbar">
+            <a href="#products-section">Home</a>
+            <a href="#cart-section" id="view-cart">Cart (<span id="cart-count">0</span>)</a>
+            <a href="#wishlist-section" id="view-wishlist">Wishlist (<span id="wishlist-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="products-section" class="products">
+            <h2>Our Products</h2>
+            <div class="product-grid"></div>
+        </section>
+
+        <section id="cart-section" class="cart hidden">
+            <h2>Your Cart</h2>
+            <div class="cart-items"></div>
+            <div class="cart-summary">
+                <p id="total-amount">Total: 0.00</p>
+                <button id="checkout-btn">Checkout</button>
+            </div>
+        </section>
+
+        <section id="wishlist-section" class="wishlist hidden">
+            <h2>Your Wishlist</h2>
+            <div class="wishlist-items"></div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 E-Shop. All rights reserved.</p>
+        <p>Follow us on:
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
