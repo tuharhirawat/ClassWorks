@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.project-container {
+    margin: 20px 0;
+}
+
+.filter-btn {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+.filter-btn:hover {
+    background-color: #555;
+}
+
+.projects-container {
+    display: flex;
+    flex: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.project {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project h2 {
+    font-size: 1.2em;
+    margin: 0 0 10px 0;
+}
+
+.project p {
+    font-size: 1em;
+    color: #555;
+}
+
+.category {
+    font-size: 0.9em;
+    color: #888;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.filter-container {
+    margin: 20px 0;
+}
+
+.filter-btn {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background-color: #555;
+}
+
+.projects-container {
+    display: flex;
+    flex: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.project {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project h2 {
+    font-size: 1.2em;
+    margin: 0 0 10px 0;
+}
+
+.project p {
+    font-size: 1em;
+    color: #555;
+}
+
+.category {
+    font-size: 0.9em;
+    color: #888;
+} */
