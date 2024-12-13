@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLA-Form</title>
+    <link rel="stylesheet" href="DLA.css"> 
+</head>
+<body>
+    <div id="Dynamic-Lease-Agreement-Form">
+        <h1>Dynamic Lease Agreement Form(DLA)</h1>
+
+        <section id="lease-clauses Info">
+            <h2>Lease Clauses</h2>
+            <div id="clause-list">
+                <div class="clause">
+                    <input type="text" class="clause-input" placeholder="Enter lease clause..." />
+                    <button class="remove-clause" onclick="removeClause(this)">Remove Clause</button>
+                </div>
+            </div>
+            <button id="add-clause" onclick="addClause()">Add Clause</button>
+        </section>
+
+        <section id="Payment-Info">
+            <h2>Payment Information</h2>
+
+            <label for="Monthly-Rent">Monthly Rent ($):</label>
+            <input type="number" id="Monthly-Rent" name="Monthly-Rent" max="300000" onchange="calculateTotal()">
+
+          
+            <label for="Lease-Time">Lease Duration (Months):</label>
+            <input type="number" id="Lease-Time" name="Lease-Time"  min="1" max="48" onchange="calculateTotal()">
+
+
+          <label for="Security-Deposit">Security Deposit ($):</label>
+          <input type="number" id="Security-Deposit" name="Security-Deposit" max="200000" onchange="calculateTotal()">
+
+
+          <label for="Late-Fee charge">Late Fee Percentage (%):</label>
+          <input type="number" id="Late-Fee charge" name="Late-Fee charge" max="10" onchange="calculateTotal()">
+
+            <h3>Total-Payment:$<span id="Total-Payment">0</span></h3>
+        </section>
+
+        <button id="submit-button" onclick="submitForm()">Submit Form</button>
+
+        <section id="lease-summary">
+            <h2>Lease Summary</h2>
+        </section>
+
+    </div>
+
+    <script src="./DLA.js"></script>
+</body>
+</html>
