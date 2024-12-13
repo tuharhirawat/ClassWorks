@@ -1,0 +1,67 @@
+body {
+    background-image: url("https://cdn.dribbble.com/users/499193/screenshots/17627325/__13.png?resize=400x0 ");
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height:100vh;
+  }
+  
+  h1 {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 100px;
+  }
+  
+  p {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  button {
+
+    font-size: 30px;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  
+
+  }
+  
+  button:hover {
+    opacity: 0.7;
+  }
+  
+ 
+  
+  #user-score {
+    color: #2196f3;
+  }
+  
+  #computer-score {
+    color: #ff0000;
+  }
+
+  .scores{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .reset
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
